@@ -9,6 +9,9 @@ modify histories, or parse complete transcripts.
 See the [architecture guide](docs/architecture/README.md) for responsibilities, interfaces,
 dependencies, storage, and failure behavior.
 
+See [CLI application or agent plugin?](docs/comparison.md) for the comparison behind the
+terminal-first design and the condition that would justify adding plugin packaging later.
+
 ## Install
 
 Python 3.11 or newer and [uv](https://docs.astral.sh/uv/) are required for development:
