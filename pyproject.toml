@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-sessions"
+version = "0.1.0"
+description = "List local Codex and Claude Code sessions as normalized JSON"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+  "claude-agent-sdk>=0.2.152,<0.3",
+]
+
+[project.scripts]
+agent-sessions = "agent_sessions.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4,<9",
+  "ruff>=0.13,<0.15",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_sessions"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+extend-exclude = [".architecture"]

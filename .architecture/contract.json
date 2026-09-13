@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "agent-sessions",
+  "kind": "package",
+  "repository": "https://github.com/doruksahin/agent-sessions",
+  "owner": "doruksahin",
+  "document": "docs/architecture/README.md",
+  "sourcePaths": [
+    "pyproject.toml",
+    "src/agent_sessions/cli.py",
+    "src/agent_sessions/inventory.py",
+    "src/agent_sessions/providers/codex.py",
+    "src/agent_sessions/providers/claude.py"
+  ],
+  "dependencyChecks": [],
+  "boundaryChecks": []
+}
