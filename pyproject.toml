@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "agent-sessions"
-version = "0.1.0"
+version = "0.1.1"
 description = "List local Codex and Claude Code sessions as normalized JSON"
 readme = "README.md"
 requires-python = ">=3.11"
