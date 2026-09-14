@@ -14,6 +14,16 @@ terminal-first design and the condition that would justify adding plugin packagi
 
 ## Install
 
+Download the wheel from the [GitHub releases](https://github.com/doruksahin/agent-sessions/releases)
+and install it with Python 3.11 or newer:
+
+```sh
+uv tool install ./agent_sessions-<version>-py3-none-any.whl
+```
+
+Each release includes a wheel, source archive, and `SHA256SUMS`. Releases are distributed
+through this repository's GitHub release assets; there is no PyPI publication workflow.
+
 Python 3.11 or newer and [uv](https://docs.astral.sh/uv/) are required for development:
 
 ```sh
@@ -74,7 +84,8 @@ never a misleading partial result.
   Only top-level CLI and desktop/editor sessions are included; subagent records are excluded.
 - Claude Code: the official `claude-agent-sdk` `list_sessions()` interface.
 
-The installed Claude SDK version is controlled by this repository's lockfile. The tool reads
+Development uses the Claude SDK version in this repository's lockfile. Standalone installs
+resolve the compatible dependency range declared in the package metadata. The tool reads
 local session metadata and never writes to either provider's history.
 
 ## Develop
@@ -82,3 +93,6 @@ local session metadata and never writes to either provider's history.
 ```sh
 uv run pytest
 ```
+
+See the [release guide](docs/releases.md) for automated preparation, artifact verification,
+and manual recovery when GitHub Actions is unavailable.
