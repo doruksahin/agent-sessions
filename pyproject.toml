@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling>=1.27,<2"]
+requires = ["hatchling>=1.32.0,<2"]
 build-backend = "hatchling.build"
 
 [project]
@@ -18,7 +18,7 @@ agent-sessions = "agent_sessions.cli:main"
 
 [dependency-groups]
 dev = [
-  "pytest>=8.4,<9",
+  "pytest>=8.4.2,<9",
   "ruff>=0.13,<0.15",
 ]
 
