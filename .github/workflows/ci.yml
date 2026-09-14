@@ -26,3 +26,7 @@ jobs:
           uv run --locked --python ${{ matrix.python-version }} ruff check .
           uv run --locked --python ${{ matrix.python-version }} ruff format --check .
           uv run --locked --python ${{ matrix.python-version }} pytest
+      - name: Build and smoke-install release distributions
+        run: |
+          uv build --no-sources
+          uv run --locked --python ${{ matrix.python-version }} python tools/check-release.py
