@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.1](https://github.com/doruksahin/agent-sessions/compare/v0.1.0...v0.1.1) (2026-09-14)
+## [0.1.1](https://github.com/doruksahin/agent-sessions/compare/f3c42b66bca04eb5758438a3bd9ca6da25bf6ed2...v0.1.1) (2026-09-14)
 
 
 ### Bug Fixes
